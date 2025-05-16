@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Porcentaje</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div class="encabezado">
+  <div class="logo-centro">
+    <img src="/imagenes/logo-instituto.png.jpg" alt="Logo Instituto" class="logo">
+  </div>
+  <div class="nombre-derecha">
+    <img src="/imagenes/nombre-profesor.png.jpg" alt="Prof. Ricardo Visconti" class="profesor">
+  </div>
+</div>
+
+
+  <div class="container">
+    <h1>🧮 Calculadora %</h1>
+    <p><strong>Descripción:</strong> Calcular el porcentaje de una cantidad dada.</p>
+
+    <div class="inputs">
+      <label>El 
+        <input type="number" id="porcentaje" placeholder="%" /> % de 
+        <input type="number" id="cantidad" placeholder="Cantidad" /> es 
+        <span id="resultado" class="resultado">...</span>.
+      </label>
+    </div>
+
+    <button id="btnCalcular">Calcular</button>
+
+    <div class="operaciones">
+      <h3>Operaciones</h3>
+      <table>
+        <tr><th>n</th><th>%</th></tr>
+        <tr><td id="tablaX">x</td><td id="tablaPorcentaje"></td></tr>
+        <tr><td id="tablaCantidad"></td><td>100</td></tr>
+      </table>
+
+      <p class="formula" id="formula"></p>
+    </div>
+
+    <div class="barra">
+      <h3>Representación</h3>
+      <div class="barra-contenedor">
+        <div id="barraValor" class="barra-valor"></div>
+      </div>
+      <div class="barra-labels">
+        <span>0</span>
+        <span id="etiquetaCantidad">0</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

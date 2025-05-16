@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: url('fondo-profesorado.png') no-repeat center center fixed;
+  background-size: contain;
+  background-blend-mode: lighten;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.encabezado {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-centro {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nombre-derecha {
+  margin-left: auto;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+.profesor {
+  height: 60px;
+  width: auto;
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.inputs input {
+  width: 60px;
+  padding: 5px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.resultado {
+  background: #ffeb3b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: #3949ab;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.operaciones table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.operaciones th, .operaciones td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.barra {
+  margin-top: 20px;
+}
+
+.barra-contenedor {
+  width: 100%;
+  height: 25px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.barra-valor {
+  height: 100%;
+  background: #3949ab;
+  width: 0;
+  color: white;
+  text-align: right;
+  padding-right: 5px;
+  transition: width 0.5s ease;
+}
+
+.barra-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-centro {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  .nombre-derecha {
+    margin-left: 0;
+  }
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .inputs input {
+    width: 50px;
+    margin: 3px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
