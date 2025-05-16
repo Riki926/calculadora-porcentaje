@@ -40,9 +40,6 @@ body {
   width: auto;
 }
 
-
-
-
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -126,6 +123,52 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    padding: 0;
+    background-size: cover;
+  }
+
+  .container {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 20px 5px 30px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inputs input {
+    width: 95vw;
+    max-width: 100%;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 12px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 16px;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .resultado {
+    font-size: 22px;
+    min-width: 80px;
+    margin: 10px 0;
+  }
+
+  .operaciones table {
+    font-size: 18px;
+  }
+
+  .barra-labels span {
+    font-size: 16px;
+  }
+
   .encabezado {
     flex-direction: column;
     align-items: center;
@@ -140,21 +183,6 @@ button {
 
   .nombre-derecha {
     margin-left: 0;
-  }
-
-  .container {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .inputs input {
-    width: 50px;
-    margin: 3px;
-  }
-
-  button {
-    font-size: 14px;
-    padding: 8px;
   }
 }
 
