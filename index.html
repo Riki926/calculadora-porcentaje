@@ -21,38 +21,77 @@
     <h1>🧮 Calculadora %</h1>
     <p><strong>Descripción:</strong> Calcular el porcentaje de una cantidad dada.</p>
 
-    <div class="inputs">
-      <label>El 
-        <input type="number" id="porcentaje" placeholder="%" /> % de 
-        <input type="number" id="cantidad" placeholder="Cantidad" /> es 
-        <span id="resultado" class="resultado">...</span>.
-      </label>
+    <div style="margin-bottom: 20px;">
+      <label for="tipoOperacion"><strong>Tipo de operación:</strong></label>
+      <select id="tipoOperacion">
+        <option value="porcentaje">Porcentaje</option>
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicación</option>
+        <option value="division">División</option>
+      </select>
     </div>
 
-    <button id="btnCalcular">Calcular</button>
-
-    <div class="operaciones">
-      <h3>Operaciones</h3>
-      <table>
-        <tr><th>n</th><th>%</th></tr>
-        <tr><td id="tablaX">x</td><td id="tablaPorcentaje"></td></tr>
-        <tr><td id="tablaCantidad"></td><td>100</td></tr>
-      </table>
-
-      <p class="formula" id="formula"></p>
+    <div id="bloquePorcentaje">
+      <div class="inputs">
+        <label>El 
+          <input type="number" id="porcentaje" placeholder="%" /> % de 
+          <input type="number" id="cantidad" placeholder="Cantidad" /> es 
+          <span id="resultado" class="resultado">...</span>.
+        </label>
+      </div>
+      <button id="btnCalcular">Calcular</button>
+      <div class="operaciones">
+        <h3>Operaciones</h3>
+        <table>
+          <tr><th>n</th><th>%</th></tr>
+          <tr><td id="tablaX">x</td><td id="tablaPorcentaje"></td></tr>
+          <tr><td id="tablaCantidad"></td><td>100</td></tr>
+        </table>
+        <p class="formula" id="formula"></p>
+      </div>
+      <div class="barra">
+        <h3>Representación</h3>
+        <div class="barra-contenedor">
+          <div id="barraValor" class="barra-valor"></div>
+        </div>
+        <div class="barra-labels">
+          <span>0</span>
+          <span id="etiquetaCantidad">0</span>
+        </div>
+      </div>
     </div>
 
-    <div class="barra">
-      <h3>Representación</h3>
-      <div class="barra-contenedor">
-        <div id="barraValor" class="barra-valor"></div>
+    <div id="bloqueBasico" style="display:none;">
+      <div class="inputs">
+        <input type="number" id="op1" placeholder="Operando 1" />
+        <span id="simboloOperacion">+</span>
+        <input type="number" id="op2" placeholder="Operando 2" />
+        = <span id="resultadoBasico" class="resultado">...</span>
       </div>
-      <div class="barra-labels">
-        <span>0</span>
-        <span id="etiquetaCantidad">0</span>
-      </div>
+      <button id="btnCalcularBasico">Calcular</button>
+    </div>
+
+    <hr>
+    <h3>🧑‍🎓 Cálculo de asistencia</h3>
+    <div class="grupo">
+      <label>Total de clases:</label>
+      <input id="totalClases" type="number" value="60">
+    </div>
+    <div class="grupo">
+      <label>Faltas del alumno:</label>
+      <input id="faltasAlumno" type="number" value="0">
+    </div>
+    <button id="btnCalcAsis">Calcular %</button>
+    <div class="resultados">
+      <p>Porcentaje de faltas: <span id="pctFaltas">–</span></p>
+      <p>Porcentaje de asistencia: <span id="pctAsis">–</span></p>
     </div>
   </div>
+
+  <footer>
+    <p>Desarrollado por Ricardo Visconti</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

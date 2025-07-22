@@ -177,3 +177,76 @@ button {
     margin-left: 0;
   }
 }
+
+/* Ajuste para el bloque de operaciones básicas */
+#bloqueBasico .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+#bloqueBasico input[type="number"] {
+  width: 80px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+#simboloOperacion {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 6px;
+}
+#bloqueBasico button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: #3949ab;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  #bloqueBasico .inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #bloqueBasico input[type="number"] {
+    width: 95vw;
+    max-width: 100%;
+    font-size: 20px;
+    padding: 12px;
+  }
+  #simboloOperacion {
+    font-size: 26px;
+    margin: 0 0 0 0;
+  }
+  #bloqueBasico button {
+    font-size: 20px;
+    padding: 16px;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f0f0f0;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 16px 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+  font-style: italic;
+}
